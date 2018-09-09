@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2016",
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "es5",
+      "es6",
+      "es7",
+      "esnext"
+    ],
+    "outDir": "./lib"
+  },
+  "include": [
+    "./src/*"
+  ],
+  "exclude": [
+    "./lib/*"
+  ]
+}

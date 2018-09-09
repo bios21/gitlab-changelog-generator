@@ -1,0 +1,32 @@
+{
+  "name": "@lsagetlethias/gitlab-changelog-generator",
+  "version": "1.0.0",
+  "description": "A changelog generator based on gitlab merge requests and https://keepachangelog.com/fr/1.0.0/ convention",
+  "main": "index.js",
+  "repository": "git@github.com:bios21/gitlab-changelog-generator.git",
+  "author": "Lilian Saget-Lethias <lilian.sagetlethias@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "gitlab-changelog-generator": "bin/gitlab-changelog-generator"
+  },
+  "devDependencies": {
+    "@types/node": "^9.6.2",
+    "@types/yargs": "^11.0.0",
+    "prettier": "^1.11.1",
+    "rimraf": "^2.6.2",
+    "ts-node": "^5.0.1",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.10.0",
+    "tslint-plugin-prettier": "^1.3.0",
+    "typescript": "^2.8.1"
+  },
+  "dependencies": {
+    "gitlab": "^3.0.3",
+    "yargs": "^11.0.0"
+  },
+  "scripts": {
+    "lint": "tslint --project tsconfig.json -c tslint.json '{src,test,example}/**/*.ts*'",
+    "build": "rimraf lib/* && tsc",
+    "start": "node bin/gitlab-changelog-generator"
+  }
+}

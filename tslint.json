@@ -1,0 +1,82 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-plugin-prettier",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "prettier": [true, {
+      "tabWidth": 4,
+      "trailingComma": "all",
+      "singleQuote": true,
+      "printWidth": 120,
+      "parser": "typescript"
+    }],
+    "class-name": true,
+    "jsdoc-format": true,
+    "interface-name": false,
+    "triple-equals": true,
+    "semicolon": [
+      true,
+      "always",
+      "ignore-interfaces"
+    ],
+    "align": [
+      true,
+      "parameters",
+      "statements"
+    ],
+    "indent": [
+      true,
+      "spaces"
+    ],
+    "no-var-keyword": true,
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "private-static-field",
+          "protected-static-field",
+          "public-static-field",
+          "private-instance-field",
+          "protected-instance-field",
+          "public-instance-field",
+          "private-constructor",
+          "protected-constructor",
+          "public-constructor",
+          "private-static-method",
+          "protected-static-method",
+          "public-static-method",
+          "private-instance-method",
+          "protected-instance-method",
+          "public-instance-method"
+        ]
+      }
+    ],
+    "no-console": false,
+    "object-literal-sort-keys": false,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "prefer-const": true,
+    "trailing-comma": true,
+    "arrow-parens": false,
+    "interface-over-type-literal": false,
+    "no-consecutive-blank-lines": [false],
+    "max-line-length": [false],
+    "no-debugger": false,
+    "no-reference": false,
+    "curly": true,
+    "no-namespace": false,
+    "no-string-literal": false,
+    "variable-name": false,
+    "no-empty": false,
+    "one-variable-per-declaration": false,
+    "forin": false,
+    "no-var-requires": false,
+    "ban-types": false,
+    "max-classes-per-file": [false],
+    "no-unused-variable": true
+  }
+}
